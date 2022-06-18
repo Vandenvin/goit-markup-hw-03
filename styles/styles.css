@@ -1,0 +1,251 @@
+:root{
+    --text-primary-black-color: #212121;
+    --text-second-black-color: #757575;
+    --text-third-white-color: #FFFFFF;
+    --focus-color: #2196F3;
+    --focus-second-color: #188CE8; /* focus кнопки на баннере */
+    --text-logo-black-color: #000000;
+    --text-contact-footer-white-color: rgba(255, 255, 255, 0.6); /* tel и mail в футере */
+
+
+    --background-primary-color:#ffffff;
+    --background-second-color: #2F303A;
+    --background-third-color: #F5F4FA;
+}
+
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+.list {
+    list-style: none;
+}
+
+body {
+    background: var(--background-primary-color);
+    color: var(--text-primary-black-color);
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* header */
+/* header logo */
+.header-logo {
+    text-decoration: none;
+    color: var(--text-logo-black-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo-first-part{
+color: var(--focus-color);
+}
+
+/* header link navigation */
+.site-nav .link {
+    text-decoration: none;
+    color: var(--text-primary-black-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.site-nav .link.current{
+    color: var(--focus-color);
+}
+
+/* header contact */
+.header-contact .link {
+    text-decoration: none;
+    color: var(--text-second-black-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover, .site-nav .link:focus,
+.header-contact .link:hover, .header-contact .link:focus{
+    color: var(--focus-color);
+}
+
+/* main */
+/* main section banner */
+.banner {
+    background-color: var(--background-second-color);/* временно */
+   
+}
+
+.banner-title{
+    color: var(--text-third-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height:1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.banner-btn {
+    background-color: var(--focus-color);
+    color: var(--text-third-white-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
+    /* Пока что для красоты */
+    border-style: inherit;
+    border-radius: 4px;
+}
+.banner-btn:hover, .banner-btn:focus{
+    background-color: var(--focus-second-color);
+}
+
+/* main all section name h2*/
+.section-title {
+    /* font-weight: 700; по умолчанию*/
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* main section peculiarities */
+.peculiarities-list .title {
+    /* color: var(--text-primary-black-color); наследуется от Body*/
+    /* font-weight: 700; по умолчанию*/
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    }
+
+.peculiarities-list .text {
+    color: var(--text-second-black-color);
+    /* font-weight: 400; по умолчанию*/
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* section work */
+/* пока что никаких стилей */
+
+/* section team */
+.team {
+    background-color: var(--background-third-color);
+}
+
+.team-list {
+    background-color: var(--background-primary-color);
+}
+
+.team-list .title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-list .text{
+    color: var(--text-second-black-color);
+    /* font-weight: 400; по умолчанию*/
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+/* footer */
+.page-footer {
+    background-color: var(--background-second-color);
+}
+
+/* footer logo*/
+.footer-logo {
+    text-decoration: none;
+    color: var(--background-primary-color);
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+/* footer adress*/
+
+.page-footer address{
+    font-style: normal;
+}
+
+.footer-adress{
+    color: var(--text-third-white-color);
+    /* font-weight: 400; по умолчанию*/
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* footer contact link*/
+.footer-contact .link {
+    text-decoration: none;
+    color: var(--text-contact-footer-white-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+/* footer focus on tel and mail*/
+.footer-contact .link:hover,
+.footer-contact .link:focus {
+    text-decoration: none;
+    color: var(--focus-color);
+}
+
+
+/* portfolio */
+.portfolio-filter .btn{
+    background-color: var(--background-third-color);
+    color: var(--text-primary-black-color);
+    font-family: inherit; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+
+    /* Пока что для красоты */
+    border-style: inherit;
+    border-radius: 4px;
+}
+
+.portfolio-filter .btn:hover,
+.portfolio-filter .btn:focus {
+    background-color: var(--focus-color);
+    color: var(--text-third-white-color); 
+}
+.portfolio-project .title{
+    color: var(--text-primary-black-color);
+    /* font-weight: 700; по умолчанию*/
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio-project .text{
+    color: var(--text-second-black-color);
+    /* font-weight: 400; по умолчанию*/
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+.portfolio-project .link{
+    text-decoration: none;
+}
