@@ -202,7 +202,7 @@ body {
 /* main section peculiarities */
 
 .section.peculiarities {
-  background-color: darkgoldenrod;
+  /* background-color: darkgoldenrod; */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -219,6 +219,17 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.peculiarities-list {
+  display: flex;
+  justify-content: space-between;
+}
+.peculiarities-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.peculiarities-list .item {
+  width: 270px;
 }
 
 .peculiarities-list .title {
