@@ -63,7 +63,7 @@ body {
 
 /* header */
 .page-header {
-  border: 1px solid var(--border-header-line);
+  border-bottom: 1px solid var(--border-header-line);
 }
 .header-nav {
   display: flex;
@@ -87,11 +87,11 @@ body {
 
   display: inline-block;
 
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 50px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  /* margin-top: 24px;
+  margin-bottom: 25px; */
+  margin-right: 93px;
 }
 
 .logo-first-part {
@@ -134,8 +134,8 @@ body {
 
 .header-contact .link {
   display: block;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   text-decoration: none;
   color: var(--text-second-black-color);
@@ -375,6 +375,8 @@ body {
 .portfolio-filter {
   display: flex;
   justify-content: center;
+
+  margin-bottom: 50px;
 }
 
 .portfolio-filter .item:not(:last-child) {
@@ -394,8 +396,6 @@ body {
   padding: 6px 22px;
   border-style: inherit;
   border-radius: 4px;
-
-  margin-bottom: 34px;
 }
 
 .portfolio-filter .btn:hover,
@@ -430,7 +430,10 @@ body {
 
 .portfolio-project .img-sign {
   padding: 20px 24px;
-  border: 1px solid var(--border-portfolio-card);
+
+  border-right: 1px solid var(--border-portfolio-card);
+  border-bottom: 1px solid var(--border-portfolio-card);
+  border-left: 1px solid var(--border-portfolio-card);
 }
 
 .portfolio-project .title {
